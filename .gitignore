@@ -1,0 +1,48 @@
+# ============================
+# Node.js
+# ============================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# ============================
+# Environment variables
+# ============================
+.env
+*.env
+.env.local
+.env.*.local
+
+# ============================
+# Firebase Admin Keys (quan trọng)
+# ============================
+serviceAccountKey.json
+*.key.json
+
+# ============================
+# Build & cache
+# ============================
+dist/
+build/
+.cache/
+.tmp/
+
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+debug.log
+
+# ============================
+# OS files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# IDE files
+# ============================
+.vscode/
+.idea/
