@@ -26,6 +26,10 @@ function initFirebase() {
         throw new Error('Invalid Firebase JSON credentials. Server stopped.');
     }
 
+    // 4. Khởi tạo Firebase với đối tượng serviceAccount đã được phân tích
+    adminSdk.initializeApp({
+        credential: adminSdk.credential.cert(serviceAccount),
+    });
     console.log("🔥 Firebase Admin SDK initialized successfully.");
     return adminSdk;
 }
