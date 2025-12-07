@@ -9,9 +9,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-// init firebase admin
-const { initFirebase } = require('./config/firebase.js');
-const admin = initFirebase();
+// // init firebase admin
+// const { initFirebase } = require('./config/firebase.js');
+// const admin = initFirebase();
 
 
 // routes
