@@ -23,8 +23,7 @@ function initFirebase() {
         serviceAccount = JSON.parse(serviceAccountJson);
     } catch (e) {
         console.error('Lỗi khi phân tích JSON Service Account:', e);
-        // Xử lý lỗi hoặc thoát
-        return; 
+        throw new Error('Invalid Firebase JSON credentials. Server stopped.');
     }
 
     // 4. Khởi tạo Firebase với đối tượng serviceAccount đã được phân tích
