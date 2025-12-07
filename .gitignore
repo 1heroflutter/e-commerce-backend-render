@@ -17,6 +17,7 @@ yarn-error.log
 # ============================
 # Firebase Admin Keys (quan trọng)
 # ============================
+backend/serviceAccountKey.json
 serviceAccountKey.json
 *.key.json
 
